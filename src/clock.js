@@ -9,6 +9,20 @@ const StyledClock = styled.div`
   border-radius: 50%;
   border: 12px currentColor solid;
   position: relative;
+  background-color: #fff;
+  &:before { 
+    content: '';
+    width: 115%;
+    height: 115%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0,0,0,0.05);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border: 3px currentColor solid;
+  }
 `;
 
 const Circle = styled.div`
