@@ -1,6 +1,6 @@
 ### It's a nice clock...
 
-### (Demo)[https://4jnz1l2kow.codesandbox.io/]
+### [Demo](https://4jnz1l2kow.codesandbox.io/)
 
 ### Development
 
