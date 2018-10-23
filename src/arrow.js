@@ -30,7 +30,7 @@ const getRotation = ({ state, type }) => {
 const StyledArrow = styled.div`
   width: ${props => arrowSizes[props.type].width}px;
   height: ${props => arrowSizes[props.type].height}px;
-  background-color: #333;
+  background-color: currentColor;
   position: absolute;
   left: 50%;
   bottom: 50%;
