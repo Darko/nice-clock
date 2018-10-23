@@ -36,9 +36,15 @@ const StyledArrow = styled.div`
   bottom: 50%;
   margin-left: -2px;
   transform-origin: 2px 100%;
-  transform: rotate(${getRotation}deg);
+  
 `;
 
-const Arrow = props => <StyledArrow {...props} />;
+const Arrow = props => {
+  const style = {
+    transform: `rotate(${getRotation(props)}deg)`,
+    WebkitTransform: `rotate(${getRotation(props)}deg)`
+  };
+  return <StyledArrow {...props} style={style} />;
+};
 
 export default Arrow;
