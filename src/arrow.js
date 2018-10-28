@@ -18,12 +18,13 @@ const arrowSizes = {
 
 const getRotation = ({ state, type }) => {
   let v = state[type];
-  if (type === "hours" && v > 12) {
-    v = state[type] - 12;
+  if (type === "hours") {
+    if (v > 12) {
+      v = state[type] - 12;
+    }
     v = v + state.minutes / 60;
     return v * 30; // The angle between 2 hours is 30deg (360 / 12)
   }
-
   return v * 6; // The angle between each minute tick is 6deg (360 / 60)
 };
 
